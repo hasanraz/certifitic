@@ -1,0 +1,33 @@
+<div class="template-form container">
+      
+    <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input type="text" [(ngModel)]="name" value="name" name="name">
+    <br>
+    </mat-form-field>
+</div>
+
+<div class="template-backgrnd container" id="Edit-certificate">
+    <div class="cert-header">
+        <div class="postHeaderLeft"></div>
+        <div class="postHeaderRight"><span>Reg. No. - HAM/02146</span></div>
+        <h1 class="header"> Madad Foundation </h1>
+        <h2 class="subHeader"> Certificate of Appreciation </h2>
+        <h3 class="header"> Awarded to </h3>
+        <h2 class="subHeader"> Mr/Mrs {{name}} </h2>
+    </div>
+    <div class="cert-body"> 
+        <p> We proudly appreciate all our corona warriors who gave their precious contribution to subside the intensity of the pandemic COVID-19 </p>
+        <p> 2020 </p>
+    </div>
+    <div class="cert-footer">
+        <div class="cordinator">
+            <span>President</span>
+        </div>
+        <div class="subCordinator">
+            <span>Cordinator</span>
+        </div>
+    </div>
+</div>
+
+<button (click)="getImage()">Get Certicate Print</button>
